@@ -49,6 +49,7 @@
         <button id="generateRoutine" class="generate-btn">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
         </button>
+        <button id="clearSelections" class="generate-btn">Clear All</button>
       </div>
 
       <!------- Chat Area ------->
@@ -85,8 +86,18 @@
       </footer>
     </div>
 
+    <!-- Product Description Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span id="modalClose" class="modal-close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalBrand"></p>
+        <img id="modalImage" src="" alt="" />
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
     <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
